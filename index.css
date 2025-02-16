@@ -61,6 +61,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 500;
 }
 
 img {
@@ -109,4 +110,74 @@ h6 {
 
 .fs-200 {
   font-size: var(--fs-200);
+}
+
+/**=======================
+ * COMPONENTS
+ *========================**/
+
+.blog-article {
+  flex-direction: column;
+  --gap: 1.5rem;
+  max-width: 24rem;
+  background-color: #fff;
+  border-radius: 1.25em;
+  border: 1px solid hsl(var(--clr-dark-gray));
+
+  padding: 1.5rem;
+  margin-inline: 1.5rem;
+  filter: drop-shadow(0.5rem 0.5rem hsl(var(--clr-dark-gray)));
+  transition: all 200ms ease-out;
+}
+
+.blog-article:hover {
+  filter: drop-shadow(1rem 1rem hsl(var(--clr-dark-gray)));
+  margin: -0.5rem;
+}
+
+.blog-article figure {
+  height: 200px;
+  overflow: hidden;
+}
+
+.blog-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: calc(1em * 0.625);
+}
+
+.blog-header {
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.tag {
+  align-self: flex-start; /* flex will make stretch children unless configured*/
+  border-radius: calc(1em * 0.25);
+  padding: 0.25rem 0.75rem;
+  font-weight: 800;
+}
+
+.blog-title {
+  font-weight: 800;
+}
+
+.blog-article:hover .blog-title {
+  color: hsl(var(--clr-yellow));
+}
+
+.author-image {
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+}
+
+.author-name {
+  font-weight: 800;
+}
+
+.blog-footer {
+  gap: 0.75rem;
+  align-items: center;
 }

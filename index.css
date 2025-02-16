@@ -131,7 +131,8 @@ h6 {
   transition: box-shadow 200ms ease-out;
 }
 
-.blog-article:hover {
+.blog-article:hover,
+.blog-article:focus {
   box-shadow: 1rem 1rem hsl(var(--clr-dark-gray));
   /*? This is good animation too! if we use drop-shadow */
   /* filter: drop-shadow(1rem 1rem hsl(var(--clr-dark-gray)));

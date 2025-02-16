@@ -16,18 +16,27 @@
   <!-- tabindex adds tab functionality to the whole article -->
   <main>
     <article class="blog-article flex" tabindex="0">
-      <figure>
-        <img class="blog-image" src="./assets/images/illustration-article.svg" alt="An abstract illustration">
-      </figure>
-      <header class="blog-header flex">
-        <span class="tag bg-accent fs-200 ">Learning</span>
-        <p class="fs-200">Published 21 Dec 2023</p>
-        <h1 class="blog-title fs-500">HTML & CSS foundations</h1>
+
+      <div class="content-group flex">
+        <header class="blog-header">
+          <h1 class="blog-title fs-500">HTML & CSS foundations</h1>
+        </header>
+
+        <div class="blog-meta flex">
+          <span class="tag bg-accent fs-200 ">Learning</span>
+          <p class="date-published fs-200">Published 21 Dec 2023</p>
+        </div>
+
         <p class="text-secondary fs-300">
           These languages are the backbone of every website, defining structure,
           content, and presentation.
         </p>
-      </header>
+      </div>
+
+      <figure>
+        <img class="blog-image" src="./assets/images/illustration-article.svg" alt="An abstract illustration">
+      </figure>
+
       <section class="blog-footer flex">
         <img class="author-image" src="./assets/images/image-avatar.webp" alt="Author Greg Hooper's profile picture">
         <span class="author-name fs-200">Greg Hooper</span>

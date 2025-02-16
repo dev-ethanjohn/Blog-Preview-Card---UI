@@ -126,13 +126,16 @@ h6 {
 
   padding: 1.5rem;
   margin-inline: 1.5rem;
-  filter: drop-shadow(0.5rem 0.5rem hsl(var(--clr-dark-gray)));
-  transition: all 200ms ease-out;
+  /* filter: drop-shadow(.5rem 0.5rem hsl(var(--clr-dark-gray))); */
+  box-shadow: 0.5rem 0.5rem hsl(var(--clr-dark-gray));
+  transition: box-shadow 200ms ease-out;
 }
 
 .blog-article:hover {
-  filter: drop-shadow(1rem 1rem hsl(var(--clr-dark-gray)));
-  margin: -0.5rem;
+  box-shadow: 1rem 1rem hsl(var(--clr-dark-gray));
+  /*? This is good animation too! if we use drop-shadow */
+  /* filter: drop-shadow(1rem 1rem hsl(var(--clr-dark-gray)));
+  transform: translate(-0.25rem, -0.25rem); */
 }
 
 .blog-article figure {
@@ -161,6 +164,7 @@ h6 {
 
 .blog-title {
   font-weight: 800;
+  transition: color 200ms ease-out;
 }
 
 .blog-article:hover .blog-title {

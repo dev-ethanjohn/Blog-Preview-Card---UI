@@ -44,6 +44,9 @@ This is a solution to the [Blog Preview Card challenge on Frontend Mentor](https
 
 Experience doing more custom styling using custom properties. Studied style scoping when dealing with custom properties. New styling properties and user-action pseudo classes such as `:hover` and `:focus`.Additionality, I took the opportunity to learn how to use local fonts (@font-face). More flexbox, responsive styling and many more learnings!
 
+*Adds...
+- I am having issue where the design puts the heading below some elements and that caused a warning from the FM's accessibility audit report. So I restructured contents inside the article and implement ordering with flexbox in CSS to place elements that is consistent with the design, but semantically correct. 
+
 ### Continued development
 
 My goal is to experiment with different use cases of custom properties and reusability. Getting comfortable naming classes. Learn more responsive best practices.
